@@ -14,7 +14,7 @@ public class GameManager : MonoBehaviour
 	void Awake ()
 	{
 		anim = GetComponent <Animator> ();
-		//Cursor.visible = false;
+		Cursor.visible = false;
 	}
 	
 	

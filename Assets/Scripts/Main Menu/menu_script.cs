@@ -14,7 +14,8 @@ public class menu_script : MonoBehaviour {
 		playButton = playButton.GetComponent<Button>();
 		creditsButton = creditsButton.GetComponent<Button>();
 		exitButton = exitButton.GetComponent<Button>();
-	
+		Cursor.visible = true;
+
 	}
 	
 	// Update is called once per frame
