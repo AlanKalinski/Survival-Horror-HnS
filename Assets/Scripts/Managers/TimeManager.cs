@@ -5,6 +5,7 @@ using System.Collections;
 public class TimeManager : MonoBehaviour
 {
 	public static float time;        // The player's tim.
+	public PlayerHealth playerHealth;// Reference to the player's health.
 
 	Text timer;                      // Reference to the Text component.
 	
@@ -16,7 +17,9 @@ public class TimeManager : MonoBehaviour
 	
 	void Update ()
 	{
-		time += Time.deltaTime;
-		timer.text = "Time: " + (int)time;
+		if(ScoreManager.score > 0 && playerHealth.currentHealth > 0){
+			time += Time.deltaTime;
+			timer.text = "Time: " + (int)time;
+		}
 	}
 }
