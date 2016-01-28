@@ -5,7 +5,6 @@ public class GameManager : MonoBehaviour
 	public PlayerHealth playerHealth;       // Reference to the player's health.
 	public float restartDelay = 5f;         // Time to wait before restarting the level
 	public float changeLevelDelay = 10f;    // Time to wait before changing the level
-	public int time;
 	
 	
 	Animator anim;                          // Reference to the animator component.
@@ -15,8 +14,7 @@ public class GameManager : MonoBehaviour
 	void Awake ()
 	{
 		anim = GetComponent <Animator> ();
-		Cursor.visible = false;
-		time = 0;
+		//Cursor.visible = false;
 	}
 	
 	
@@ -37,8 +35,5 @@ public class GameManager : MonoBehaviour
 			restartTimer += Time.deltaTime;
 			if(restartTimer >= changeLevelDelay) Application.LoadLevel(Application.loadedLevel + 1);
 		}
-
-		/* Timer */
-		time += (int)Time.deltaTime;
 	}
 }
