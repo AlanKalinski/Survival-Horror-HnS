@@ -874,7 +874,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerHealth: {fileID: 1067034108}
   enemy: {fileID: 148676, guid: d2734cb0bb57e0342ae6c2724b308723, type: 2}
-  spawnTime: 2
+  spawnTime: 1
   counterMax: 40
   spawnPoints:
   - {fileID: 517464037}
@@ -1313,7 +1313,6 @@ MonoBehaviour:
   playerHealth: {fileID: 1067034108}
   restartDelay: 5
   changeLevelDelay: 10
-  time: 0
 --- !u!1 &1264569796
 GameObject:
   m_ObjectHideFlags: 0
