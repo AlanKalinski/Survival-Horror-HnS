@@ -2858,9 +2858,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: eaa0f415b0cd5984598a4f959a3c3879, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 6681a1b2184ee4349acfc1049d41ab29, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.15
+  m_Volume: 1
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -5250,6 +5250,10 @@ Prefab:
     - target: {fileID: 8297330, guid: 72589ec54f7307d4bba3dce0a1a5075e, type: 2}
       propertyPath: reverbZoneMixCustomCurve.m_RotationOrder
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8297330, guid: 72589ec54f7307d4bba3dce0a1a5075e, type: 2}
+      propertyPath: m_Volume
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 72589ec54f7307d4bba3dce0a1a5075e, type: 2}
@@ -11164,6 +11168,7 @@ GameObject:
   - 124: {fileID: 1956762213}
   - 81: {fileID: 1956762212}
   - 114: {fileID: 1956762211}
+  - 114: {fileID: 1956762217}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -11251,6 +11256,27 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
+--- !u!114 &1956762217
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1956762210}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b8294eef67f2bd4080c802b35d3fb2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  skin: {fileID: 0}
+  mat: {fileID: 0}
+  lowFPSColor: {r: 1, g: 0, b: 0, a: 1}
+  highFPSColor: {r: 0, g: 1, b: 0, a: 1}
+  lowFPS: 30
+  highFPS: 50
+  start: {fileID: 0}
+  url: unity.html
+  statColor: {r: 1, g: 0.92156863, b: 0.015686275, a: 1}
+  crediticons: []
 --- !u!1 &1965733592
 GameObject:
   m_ObjectHideFlags: 0

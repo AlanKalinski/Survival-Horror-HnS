@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
+using UnityEditor;
 using System.Collections;
 
 public class menu_script : MonoBehaviour {
@@ -28,7 +29,9 @@ public class menu_script : MonoBehaviour {
 	}
 
 	public void credits(){
-		//credits
+		EditorUtility.DisplayDialog("Credits: ", "Project for WdPG\n\nAuthors: Alan Kaliński, Bartosz Cieślar, " +
+			"Bartłomiej Juroszek, Maciej Toborek\nPGK UŚ 2015/2016\n\nThanks to: Adobe, Bumstrum, Aquarius Max, " +
+			"Perlind Arts, Phil Chu for sharing free assets and to Unity Team for great documentation and tutorials!", "Close");
 	}
 
 	public void exitGame(){
