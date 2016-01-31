@@ -1,13 +1,14 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 using System.Collections;
-using UnityEditor;
 
 public class MenuScript : MonoBehaviour {
 
 	public Button playButton;
 	public Button creditsButton;
 	public Button exitButton;
+	public Button exitCredits;
+	public Canvas creditsCanvas;
 
 	// Use this for initialization
 	void Start () {
@@ -15,6 +16,9 @@ public class MenuScript : MonoBehaviour {
 		playButton = playButton.GetComponent<Button>();
 		creditsButton = creditsButton.GetComponent<Button>();
 		exitButton = exitButton.GetComponent<Button>();
+		exitCredits = exitCredits.GetComponent<Button>();
+		creditsCanvas = creditsCanvas.GetComponent<Canvas>();
+		creditsCanvas.enabled = false;
 		Cursor.visible = true;
 
 	}
@@ -29,9 +33,11 @@ public class MenuScript : MonoBehaviour {
 	}
 
 	public void credits(){
-		EditorUtility.DisplayDialog("Credits: ", "Project for WdPG\n\nAuthors: Alan Kaliński, Bartosz Cieślar, " +
-			"Bartłomiej Juroszek, Maciej Toborek\nPGK UŚ 2015/2016\n\nThanks to: Adobe, Bumstrum, Aquarius Max, " +
-			"Perlind Arts, Phil Chu for sharing free assets and to Unity Team for great documentation and tutorials!", "Close");
+		creditsCanvas.enabled = true;		
+	}
+
+	public void closeCredits(){
+		creditsCanvas.enabled = false;
 	}
 
 	public void exitGame(){
