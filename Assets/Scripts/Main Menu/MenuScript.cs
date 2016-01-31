@@ -1,9 +1,9 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
-using UnityEditor;
 using System.Collections;
+using UnityEditor;
 
-public class menu_script : MonoBehaviour {
+public class MenuScript : MonoBehaviour {
 
 	public Button playButton;
 	public Button creditsButton;
